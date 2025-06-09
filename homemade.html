@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Somethings Homemade - Baked with Love</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      background-color: #fff0f5;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #d6336c;
+    }
+
+    h2 {
+      margin-top: 10px;
+      color: #333;
+    }
+
+    select, button {
+      padding: 10px 15px;
+      margin: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .recipe-buttons {
+      margin-top: 20px;
+      display: none;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 15px;
+      background-color: #ffb6c1;
+    }
+
+    .btn:hover {
+      background-color: #ff69b4;
+      color: white;
+    }
+  </style>
+</head><body>
+  <h1>Somethings Homemade</h1>
+
+  <a href="butter.html"><button class="btn">Butter</button></a><br>
+  <a href="cheese.html"><button class="btn">Cheese</button></a><br>
+  <a href="potato-cheese-balls.html"><button class="btn">Potato Cheese Balls </button></a><br>
+  <a href="chocolate-ganache.html"><button class="btn">Chocolate Ganache</button></a><br>
+  <a href="mango-icecream.html"><button class="btn">Mango Icecream</button></a><br>
+  <br><br>
+  <button onclick="goBack()">← Back to Home</button>
+
+  <script>
+    function goBack() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

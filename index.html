@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Baked with Love</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      background-color: #fff0f5;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #d6336c;
+    }
+
+    h2 {
+      margin-top: 10px;
+      color: #333;
+    }
+
+    select, button {
+      padding: 10px 15px;
+      margin: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .recipe-buttons {
+      margin-top: 20px;
+      display: none;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 15px;
+      background-color: #ffb6c1;
+    }
+
+    .btn:hover {
+      background-color: #ff69b4;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Baked with Love</h1>
+  <p class="author">by Chef Maitreyi Joshi</p>
+  <h2>Recipes of Sweetness</h2>
+
+  <label for="recipeSelect">Choose a recipe category:</label><br>
+  <select id="recipeSelect" onchange="goToCategory(this.value)">
+    <option value="">-- Choose --</option>
+    <option value="cakes.html">Cakes</option>
+    <option value="cookies.html">Cookies</option>
+    <option value="breads.html">Breads</option>
+    <option value="snacks.html">Tea Time Snacks</option>
+    <option value="homemade.html">Something Homemade</option>
+  </select>
+
+  <script>
+    function goToCategory(value) {
+      if (value) {
+        window.location.href = value;
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Snacks - Baked with Love</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      background-color: #fff0f5;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #d6336c;
+    }
+
+    h2 {
+      margin-top: 10px;
+      color: #333;
+    }
+
+    select, button {
+      padding: 10px 15px;
+      margin: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .recipe-buttons {
+      margin-top: 20px;
+      display: none;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 15px;
+      background-color: #ffb6c1;
+    }
+
+    .btn:hover {
+      background-color: #ff69b4;
+      color: white;
+    }
+  </style>
+</head><body>
+  <h1>Tea Time Snacks</h1>
+
+  <a href="croissants.html"><button class="btn">Croissants</button></a><br>
+  <a href="donuts.html"><button class="btn">Donuts</button></a><br>
+  <a href="chocolate-pudding.html"><button class="btn">Chocolate Pudding</button></a><br>
+  <a href="marshmellow.html"><button class="btn">Marshmellow</button></a><br>
+  <a href="chocolate-tarts.html"><button class="btn">Chocolate Tarts</button></a><br>
+  <br><br>
+  <button onclick="goBack()">← Back to Home</button>
+
+  <script>
+    function goBack() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
